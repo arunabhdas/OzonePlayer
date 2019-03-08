@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- top_panel start -->
+    <RelativeLayout
+        android:id="@+id/top_panel"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/default_theme_cello_20percent"
+        >
+
+        <com.ozoneplayer.ozoneplayerapp.views.lato.LatoBoldTextView
+            android:id="@+id/top_panel_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mifi_margin_top"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/cooper_usage_top_title"
+            tools:text="@string/top_title_mifi_home_active_package"
+            />
+
+        <com.ozoneplayer.ozoneplayerapp.views.lato.LatoLightTextView
+            android:id="@+id/top_panel_subtitle"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_panel_title"
+            android:layout_marginTop="@dimen/mifi_margin_vertical"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/cooper_usage_top_subtitle"
+            tools:text="@string/cooper_usage_top_subtitle"
+            />
+
+        <RelativeLayout
+            android:id="@+id/packages_remaining_bar_chart_container"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/top_panel_subtitle"
+            android:layout_marginBottom="35dp"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/mifi_margin_vertical"
+            android:background="@drawable/horizontal_bar_layout_background"
+            >
+
+            <com.ozoneplayer.ozoneplayerapp.views.HorizontalProgressBarView
+                android:id="@+id/package_remaining_bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                app:backgroundColor="@color/black_20percent"
+                app:gradientEndColor="@color/mifi_bar_end_color"
+                app:gradientStartColor="@color/mifi_bar_start_color"/>
+
+
+            <com.ozoneplayer.ozoneplayerapp.views.lato.LatoLightTextView
+                android:id="@+id/chart_subheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:gravity="left"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                tools:text="48 hours remaining"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- top_panel end -->
+
+    <!-- center_panel start -->
+    <RelativeLayout
+        android:id="@+id/center_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_panel"
+        android:background="@color/default_theme_cello_60percent"
+        >
+
+        <com.ozoneplayer.ozoneplayerapp.views.lato.LatoLightTextView
+            android:id="@+id/center_panel_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mifi_margin_top"
+            android:gravity="center"
+            android:text="@string/center_title_mifi_home_active_package"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"
+            tools:text="@string/center_title_mifi_home_active_package"
+            />
+
+        <com.ozoneplayer.ozoneplayerapp.views.lato.LatoBoldTextView
+            android:id="@+id/center_panel_subtitle"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/center_panel_title"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mifi_margin_vertical"
+            android:gravity="center"
+            android:text="@string/center_subtitle_mifi_home_active_package"
+            android:textColor="@color/white"
+            android:textSize="@dimen/huge_text_size"
+            tools:text="@string/center_subtitle_mifi_home_active_package"
+            />
+
+        <Button
+            android:id="@+id/button_plan_enable"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mifi_margin_vertical"
+            android:layout_below="@id/center_panel_subtitle"
+            android:layout_width="@dimen/mifi_button_cta_width"
+            android:layout_height="@dimen/mifi_button_cta_height"
+            android:background="@drawable/rounded_button_mifi_default"
+            android:textColor="@color/white"
+            android:text="@string/center_subtitle_mifi_home_add_credit"
+            />
+
+    </RelativeLayout>
+
+    <!-- center_panel end -->
+    <!-- bottom_panel start -->
+    <RelativeLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_panel"
+        android:background="@color/default_theme_cello_80percent"
+        >
+
+        <com.ozoneplayer.ozoneplayerapp.views.lato.LatoBoldTextView
+            android:id="@+id/bottom_panel_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mifi_margin_vertical"
+            android:gravity="center"
+            android:text="@string/bottom_title_mifi_home_active_package"
+            android:textColor="@color/white"
+            android:textSize="@dimen/huge_text_size"
+            tools:text="@string/bottom_title_mifi_home_active_package"
+            />
+
+        <com.ozoneplayer.ozoneplayerapp.views.lato.LatoLightTextView
+            android:id="@+id/bottom_panel_subtitle"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_panel_title"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mifi_margin_vertical"
+            android:gravity="center"
+            android:text="@string/bottom_subtitle_mifi_home_active_package_placeholder"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"
+            tools:text="@string/bottom_subtitle_mifi_home_active_package_placeholder"
+            />
+
+        <LinearLayout
+            android:id="@+id/bottom_panel_indicators"
+            android:layout_below="@id/bottom_panel_subtitle"
+            android:layout_width="@dimen/mifi_home_indicators_spread"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:src="@drawable/battery_outline"
+            >
+
+            <LinearLayout
+                android:id="@+id/bottom_panel_indicators_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <!--                <com.rndflo.mifi.views.NetworkIndicator
+                                    android:id="@+id/networkIndicator"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="15dp"
+                                    android:layout_alignParentTop="true"
+                                    app:outerCircleColor="@color/float_transparent"
+                                    app:smallCircleColor="@color/mifi_bar_start_color"
+                                    app:largeCircleColor="@color/mifi_bar_end_color"
+                                    android:layout_marginTop="10dp" />-->
+                <com.ozoneplayer.ozoneplayerapp.views.lato.LatoLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/mifi_network_indicator_name_placeholder"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_panel_indicators_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:gravity="right"
+                >
+
+                <com.ozoneplayer.ozoneplayerapp.views.lato.LatoLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal|center"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:text="@string/mifi_battery_indicator_name_placeholder"
+                    android:paddingRight="@dimen/dimen_5"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/battery_outline"
+                    android:padding="@dimen/dimen_5"
+                    >
+                    <ProgressBar
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:layout_width="10dp"
+                        android:layout_height="30dp"
+                        android:max="100"
+                        android:progress="79"
+                        android:progressDrawable="@drawable/battery_level_indicator" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!-- bottom_panel end -->
+</RelativeLayout>
+

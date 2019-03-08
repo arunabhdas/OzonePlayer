@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- top_panel start -->
+    <RelativeLayout
+        android:id="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/default_theme_cello_60percent"
+        >
+
+        <com.ozoneplayer.ozoneplayerapp.views.lato.LatoLightTextView
+            android:id="@+id/top_panel_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text="@string/center_title_mifi_home_active_package"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"
+            tools:text="@string/center_title_mifi_home_active_package"
+            />
+
+        <com.ozoneplayer.ozoneplayerapp.views.lato.LatoBoldTextView
+            android:id="@+id/top_panel_subtitle"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_panel_title"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mifi_margin_vertical"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text="@string/center_subtitle_mifi_home_active_package"
+            tools:text="@string/center_subtitle_cooper_download_home_download_profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/huge_text_size"
+            />
+
+<!--        <TextView
+            android:id="@+id/button_select_endpoint"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_height="@dimen/mifi_button_cta_height"
+            android:background="@drawable/rounded_button_mifi_default"
+            android:layout_marginBottom="@dimen/cooper_widget_margin_bottom"
+            android:textColor="@color/white"
+            android:text="@string/center_subtitle_cooper_select_endpoint_profile"
+            tools:text="@string/center_subtitle_cooper_select_endpoint_profile"
+            android:layout_below="@+id/top_panel_subtitle"
+            android:onClick="onSelectEndpointButtonClick"
+            android:layout_centerHorizontal="true" />-->
+
+        <Spinner
+            android:id="@+id/cooper_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_panel_subtitle"
+            android:layout_marginBottom="@dimen/cooper_widget_margin_bottom"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_download_profile"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mifi_button_cta_height"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:background="@drawable/rounded_button_mifi_default"
+            android:layout_marginBottom="@dimen/cooper_widget_margin_bottom"
+            android:textColor="@color/white"
+            android:text="@string/center_subtitle_cooper_download_home_download_profile"
+            tools:text="@string/center_subtitle_cooper_download_home_download_profile"
+            android:layout_below="@id/cooper_spinner"
+            android:onClick="onDownloadProfileButtonClick"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+    </RelativeLayout>
+
+    <!-- top_panel end -->
+
+    <!-- center_panel start -->
+    <RelativeLayout
+        android:id="@+id/list_parent"
+        android:layout_below="@id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvEmptyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="@string/main_no_profile"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:visibility="visible" />
+
+<!--ANDROID-813        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:listitem="@layout/view_profile_metadata"
+            tools:visibility="visible" />-->
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:listitem="@layout/view_profile_metadata"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+    <!-- center_panel end -->
+
+    <!-- top_panel start -->
+    <RelativeLayout
+        android:id="@+id/center_panel"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/top_panel"
+        android:background="@color/default_theme_cello_80percent"
+        >
+
+
+    </RelativeLayout>
+    <!-- top_panel end -->
+
+
+    <!-- bottom_panel start -->
+    <RelativeLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_panel"
+        >
+
+
+
+
+    </RelativeLayout>
+    <!-- bottom_panel end -->
+</RelativeLayout>
+

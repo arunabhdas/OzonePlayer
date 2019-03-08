@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:covfefe="http://schemas.android.com/apk/res-auto"
+     android:interpolator="@android:anim/linear_interpolator"
+     android:shareInterpolator="true">
+
+    <alpha
+        android:fromAlpha="0"
+        android:toAlpha="1"
+        android:duration="400"/>
+
+    <com.rndflo.views.covfefedialog.CovfefeRotate3dAnimation
+        covfefe:rollType="x"
+        covfefe:fromDeg="100"
+        covfefe:toDeg="0"
+        covfefe:pivotX="50%"
+        covfefe:pivotY="50%"
+        android:duration="400"/>
+</set>

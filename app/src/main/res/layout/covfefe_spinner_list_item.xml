@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/covfefe_spinner_item_tinted_spinner"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start|center_vertical"
+    android:ellipsize="marquee"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/covfefe_spinner_item_height"
+    android:paddingBottom="@dimen/covfefe_spinner_item_popup_padding_top"
+    android:paddingLeft="@dimen/covfefe_spinner_item_popup_padding_left"
+    android:paddingRight="@dimen/covfefe_spinner_item_popup_padding_left"
+    android:paddingStart="@dimen/covfefe_spinner_item_popup_padding_left"
+    android:paddingTop="@dimen/covfefe_spinner_item_popup_padding_top"
+    android:singleLine="true"/>

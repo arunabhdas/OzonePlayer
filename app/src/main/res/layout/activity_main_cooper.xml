@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+    >
+
+    <!-- Cooper content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+
+    </FrameLayout>
+    <!-- menu_panel start -->
+
+    <FrameLayout
+        android:id="@+id/menu_panel"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:clipToPadding="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:background="@color/white"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/fragment_mifi_more_bottom_sheet_refer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="16dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_refer_a_friend"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/mifi_more_refer_a_friend"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fragment_mifi_more_bottom_sheet_account"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="16dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_avatar"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/mifi_more_account"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fragment_mifi_more_bottom_sheet_help"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="16dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_help"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/mifi_more_help"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- menu_panel end -->
+    <com.ozoneplayer.ozoneplayerapp.views.BottomNavigationViewEx
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_theme_cello"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_navigation"/>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

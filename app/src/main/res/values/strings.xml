@@ -1,0 +1,343 @@
+<resources>
+    <string name="app_name">OzonePlayer</string>
+    <string name="exo_controls_previous_description">Previous track</string>
+    <string name="exo_controls_next_description">Next track</string>
+    <string name="exo_controls_pause_description">Pause</string>
+    <string name="exo_controls_play_description">Play</string>
+    <string name="exo_controls_stop_description">Stop</string>
+    <string name="exo_controls_rewind_description">Rewind</string>
+    <string name="exo_controls_fastforward_description">Fast forward</string>
+    <string name="video">Video</string>
+    <string name="radio_player">Radio Player</string>
+    <string name="video_player">Video Player</string>
+    <string name="main_tabs">Main</string>
+    <string name="custom_player">Custom Player</string>
+
+
+    <!-- Generic Strings -->
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="unknown_profile">Unknown Profile</string>
+    <string name="phase">Phase 2</string>
+    <string name="generic_yes">YES</string>
+    <string name="generic_no">NO</string>
+    <string name="generic_ok">OK</string>
+
+    <!-- Main Activity Strings -->
+    <string name="activity_main_title">KR LPA</string>
+    <string name="main_no_profile">No Profile Available</string>
+    <string name="root_ds">Root DS</string>
+    <string name="default_dp">Default DP</string>
+    <!-- Confirmation Code Dialog -->
+    <string name="dialog_confirm_code_title">Confirmation Code</string>
+    <string name="dialog_confirm_code_message">Please enter the confirmation code</string>
+    <string name="dialog_reenter_code_message">Please re-enter the confirmation code</string>
+    <!-- Download Error Dialog -->
+    <string name="dialog_download_order_expired">Your download order has expired. Please contact your service
+        provider</string>
+    <string name="dialog_authenticate_client_failed">Client Authentication failed. Please ensure QR
+        code used/data entered corresponds to current device and try again or contact your service provider</string>
+    <string name="dialog_event_id_mismatch">Error while downloading profile automatically. Please contact your service
+        provider.</string>
+    <string name="dialog_error">Error</string>
+    <string name="dialog_confirmation_code_retry_exceed">Maximum number of retries for confirmation code exceeded.
+        Please contact your service provider.</string>
+    <string name="dialog_profile_already_exists">Failed to install profile as it already exists</string>
+    <string name="dialog_insufficient_memory_for_profile">Insufficient memory for profile.</string>
+    <string name="dialog_profile_install_failed_interruption">Profile installation failed due to some interruption.</string>
+    <string name="dialog_contact_service_provider">Please try again or contact your service provider</string>
+
+    <!-- Connectivity Warning Dialog -->
+    <string name="dialog_connectivity_warning_title">No Data Connectivity</string>
+    <string name="dialog_connectivity_warning_message">Please verify your wifi/data connection. If you continue
+        without data connectivity, the operation may fail.</string>
+    <!-- Wearable Connectivity Warning Dialog -->
+    <string name="dialog_connectivity_wearable_warning_title">No Watch Connectivity</string>
+    <string name="dialog_connectivity_wearable_warning_message">Please verify your bluetooth connection.</string>
+    <string name="dialog_euicc_memory_reset_title">Confirm eUICC memory reset</string>
+
+    <!-- Action Item -->
+    <string name="action_delete">Delete Profile</string>
+    <string name="action_switch_device_watch">Switch to Watch</string>
+    <string name="action_switch_device_mobile">Switch to Mobile</string>
+    <string name="action_show_eid">Get EID</string>
+    <string name="action_about">About</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_reset_euicc_memory">Reset eUICC Memory</string>
+    <string name="action_adv_options">Advance Options</string>
+    <string name="action_switch_phase">Phase 2</string>
+
+    <!-- QR Code Scanner Activity Strings -->
+    <string name="activity_scanner_title">Scan QR Code</string>
+    <string name="scanner_info">Place the QR Code inside the screen to scan it.</string>
+
+    <!-- Local profile operation strings-->
+    <string-array name="local_profile_operation_progress">
+        <item>Still waiting for completion of operation&#8230;</item>
+        <item>It is Taking Longer Time Than Usual. Please Continue Waiting&#8230;</item>
+        <item>Executing this request is taking too long. Press Back Button to Dismiss This Dialog or continue
+            waiting</item>
+    </string-array>
+
+    <!-- Profile Registry Activity Strings -->
+    <string name="activity_profile_registry_title">Profile Registry</string>
+    <string name="registry_provider">Provider</string>
+    <string name="registry_nickname">Nickname</string>
+    <string name="registry_profile_id">Profile Id</string>
+    <string name="registry_iccid">ICCID</string>
+    <string name="registry_state">State</string>
+    <string name="registry_state_enabled">Enabled</string>
+    <string name="registry_state_disabled">Disabled</string>
+    <string name="registry_icon_type">Icon Type</string>
+    <string name="registry_icon_type_jpg">JPG</string>
+    <string name="registry_icon_type_png">PNG</string>
+    <string name="registry_icon_type_unavailable">No Icon</string>
+    <string name="registry_icon_type_unknown">Unknown</string>
+    <string name="registry_icon_data">Icon Data</string>
+    <string name="registry_ppr_info">Profile Policy Rules</string>
+    <string name="registry_profile_class">Profile Class</string>
+    <string name="registry_profile_class_provisioning">Provisioning Profile</string>
+    <string name="registry_profile_class_test">Test Profile</string>
+    <string name="registry_profile_class_operational">Operational Profile</string>
+
+    <!-- About Activity Strings -->
+    <string name="activity_about_title">About</string>
+    <string name="about_version">Version: %1$s</string>
+    <string name="about_copyright">Copyright</string>
+    <string name="about_license">About</string>
+
+    <!-- Activation Code Manual Entry Activity Strings -->
+    <string name="activity_manual_entry_title">Enter Activation Code</string>
+    <string name="entry_ac_format">AC Format</string>
+    <string name="entry_smdp_address">SMDP Address</string>
+    <string name="entry_matching_id">Matching ID</string>
+    <string name="entry_smdp_id">SMDPid (Optional)</string>
+    <string name="entry_confirmation_code_required">Confirmation Code Required</string>
+    <string name="action_download">Download</string>
+    <string name="error_field_required">This field is required</string>
+
+    <!-- Error Strings -->
+    <string name="error_generic">Error on %1$s. code %2$s</string>
+    <string name="error_euicc_generic">Error on %1$s. Status Word: %2$s</string>
+    <string name="error_euicc_successful_execution">Error on %1$s. Error code: %2$s</string>
+    <string name="error_server_http">Error on %1$s. HTTP resultCode: %2$s</string>
+    <string name="error_server_smds">Failed to download profile. Please try again</string>
+    <string name="error_server_comm_failure">Error on %1$s. Failed to communicate with server. Please check your network connection and try again</string>
+
+    <string name="error_server_execution_not_successful">Error on %1$s.
+        %2$s|Subject:%3$s|Reason:%4$s|Id:%5$s|%6$s</string>
+    <string name="error_delete_enabled_profile">Error. Profile is still enabled.</string>
+
+    <string name="error_delete_profile_still_enabled">Unable to delete profile "%1$s" [%2$s] - Profile still
+        enabled</string>
+
+    <string name="euicc_reset_successful">eUICC memory reset completed successfully</string>
+    <string name="euicc_reset_nothing_to_delete">No content to reset.</string>
+
+    <string-array name="error_origins">
+        <item>Unknown Origin</item>
+        <item>Get Profiles Info</item>
+        <item>Delete Profile</item>
+        <item>Disable Profile</item>
+        <item>Enable Profile</item>
+        <item>Get RAT</item>
+        <item>Set Nickname</item>
+        <item>Get EID</item>
+        <item>Reset eUICC memory</item>
+        <item>Set default SMDP+ address</item>
+        <item>Get eUICC Challenge</item>
+        <item>Get eUICC configured address</item>
+        <item>Get eUICC Info</item>
+        <item>Initiate Authentication</item>
+        <item>Verify Profile policy rules</item>
+        <item>Prepare Download</item>
+        <item>Get BPP</item>
+        <item>Verify Profile MetaData</item>
+        <item>Load Bound Profile Package</item>
+        <item>Initialize Secure Channel</item>
+        <item>Configure ISD-P</item>
+        <item>Store Meta Data</item>
+        <item>Replace Session Keys</item>
+        <item>Load Profile Elements</item>
+        <item>Seq of first 87 tlv</item>
+        <item>Seq of second 87 tlv</item>
+        <item>Seq of 88</item>
+        <item>Seq of 86</item>
+        <item>Handle Profile Installation Result</item>
+        <item>Delete Profile Installation Result</item>
+        <item>Auth Client</item>
+        <item>Authenticate Server</item>
+        <item>Retrieve Notification List</item>
+        <item>Remove Notification Result</item>
+        <item>Handle Notification</item>
+        <item>List Notification</item>
+        <item>Profile Download SMDS</item>
+    </string-array>
+
+    <!-- Wear Notification Title -->
+    <string name="installation_success_title">Profile installed</string>
+    <string name="installation_fail_title">Profile not installed</string>
+    <string name="installation_fail_content">Please try again</string>
+    <string name="delete_success_title">Profile Deleted</string>
+    <string name="delete_fail_title">Delete Fail</string>
+    <string name="profile_switch_state_success_title">%1$s Success</string>
+    <string name="profile_switch_state_fail_title">%1$s Fail</string>
+    <string name="please_wait">Please wait ...</string>
+    <string name="dialog_euicc_memory_reset">Are you sure you want to reset eUICC Memory?</string>
+    <string name="refresh_ongoing_while_get_profile">SIM not ready.Unable to load profile. Please try to reload the profiles
+        again</string>
+    <string name="refresh_ongoing_while_delete_profile">SIM not ready.Unable to delete profile.Please try again later.</string>
+    <string name="refresh_ongoing_while_memory_reset">SIM not ready. Please try again later</string>
+    <string name="euicc_busy_while_memory_reset">SIM busy. Please try again later</string>
+    <string name="euicc_busy_switch_profile">SIM busy. Please try again later</string>
+
+    <string name="enter_value">Enter a value</string>
+    <string name="default_smdp_address">Default SM-DP+ address</string>
+    <string name="root_smds_address">Root SM-DS address</string>
+    <string name="set_default_smds_successful">Default SM-DP address updated successfully</string>
+    <string name="set_root_smds_successful">Root SM-DS address updated successfully</string>
+
+    <string name="value_not_available">Not available</string>
+
+    <!-- Profile policy rules Ids-->
+    <string-array name="ppr_ids">
+        <item></item>
+        <item>Disabling of this Profile is not allowed</item>
+        <item>Deletion of this Profile is not allowed</item>
+        <item>Deletion of this Profile is required upon its successful disabling</item>
+    </string-array>
+    <string name="user_consent_message">The subscription you are about to install is configured as follows:%s</string>
+    <string name="user_consent_rejected">Cancelling request.Please wait...</string>
+    <string name="user_consent_accept">Accept</string>
+
+    <!-- Profile discovery -->
+    <string name="action_esimprov">Esimprov</string>
+    <string name="action_poweron_discover_profile">Discover Profile</string>
+    <string name="profile_discovery_aborted_title">Profile Discovery Aborted</string>
+    <string name="profile_discovery_aborted">Operational profile already installed. Aborting the request</string>
+    <string name="profile_discovery_failed">Failed to discover profile, please try again or use activation code
+    to add profile</string>
+    <string name="discoveringProfile">Discovering Profile</string>
+
+    <!-- Notification List Activity -->
+    <string name="install_header">Install</string>
+    <string name="enable_header">Enable</string>
+    <string name="disable_header">Disable</string>
+    <string name="delete_header">Delete</string>
+    <string name="notification_list_empty">No pending notifications available</string>
+    <string name="action_send_all">Send All</string>
+    <string name="action_remove_all">Remove All</string>
+    <string name="remove_all_notifications_successful">Notifications removed successfully.</string>
+    <string name="activity_notification_list_title">Notification List</string>
+    <string name="list_notification">Notification List</string>
+    <string name="list_notification_desc">View list of pending notifications</string>
+    <string name="send_all_notifications_successful">Notifications sent Successfully</string>
+    <string name="sending_notifications">Sending Notifications: %1$d of %2$d</string>
+    <string name="remove_notifications_nothing_to_remove">Nothing to remove</string>
+    <string name="user_consent_reject">Reject</string>
+
+    <!-- Cooper -->
+    <string name="mifi_button_text">Global Hotspot</string>
+    <string name="title_activity_mifi">Mifi</string>
+    <string name="title_configure_mifi">Configure Mifi</string>
+    <string name="mifi_connect_ap_button_text">Connect to Mifi AP</string>
+    <string name="mifi_retrieve_info_text">Retrieve Mifi Info</string>
+
+    <string name="title_mifi_usage">Explore</string>
+    <string name="title_mifi_rates">Discover</string>
+    <string name="title_mifi_home">Go</string>
+    <string name="title_mifi_packages">Manage</string>
+    <string name="title_mifi_more">More</string>
+    <string name="top_title_mifi_home_active_package">Current Active</string>
+    <string name="top_subtitle_mifi_home_active_package">SIM Card Profile</string>
+    <string name="center_button_label">SIM1</string>
+    <string name="center_title_mifi_home_active_package">Broadcaster</string>
+    <string name="center_subtitle_mifi_home_active_package">Tap button below to send broadcast</string>
+    <string name="center_subtitle_mifi_home_add_credit">Send Broadcast</string>
+    <string name="bottom_title_mifi_home_active_package">Hotspot</string>
+    <string name="bottom_subtitle_mifi_home_active_package_placeholder">SSID Name</string>
+    <string name="mifi_network_indicator_name_placeholder">Network</string>
+    <string name="mifi_battery_indicator_name_placeholder">79%</string>
+
+    <string name="cooper_usage_top_title">Usage</string>
+    <string name="cooper_usage_top_subtitle">Usage</string>
+
+    <string name="cooper_rates_top_title">Rates</string>
+    <string name="cooper_rates_top_subtitle">Rates</string>
+
+    <string name="cooper_packages_top_title">Packages</string>
+    <string name="cooper_packages_top_subtitle">Packages</string>
+
+    <string name="cooper_more_top_title">More</string>
+    <string name="cooper_more_top_subtitle">More</string>
+
+
+    <string name="cooper_home_manage_title">eSIM Management</string>
+    <string name="cooper_home_manage_subtitle">Manage</string>
+
+    <string name="cooper_home_download_title">Download a  SIM Profile</string>
+    <string name="cooper_home_download_subtitle">Download</string>
+
+    <string name="cooper_manage_discover_profile">Discover Profile</string>
+
+
+    <string name="mifi_more_refer_a_friend">Refer a Friend</string>
+    <string name="mifi_more_account">Account</string>
+    <string name="mifi_more_help">Help</string>
+
+    <string name="center_subtitle_cooper_download_home_download_profile">Download Profile</string>
+    <string name="center_subtitle_cooper_select_endpoint_profile">Select Endpoint</string>
+
+    <!-- UsageFragment -->
+    <string name="mifi_usage_tab_day_title">24 Hrs</string>
+    <string name="mifi_usage_tab_week_title">7 Days</string>
+    <string name="mifi_usage_tab_month_title">30 Days</string>
+    <string name="mifi_usage_tab_year_title">365Days</string>
+
+
+    <!-- CooperHomeManageFragment -->
+    <string name="cooper_fragment_manage_cooper_home_get_id">Get EID</string>
+    <string name="cooper_fragment_manage_cooper_home_dismiss">Dismiss</string>
+    <string name="cooper_fragment_manage_cooper_home_eid_value">EID Value : </string>
+
+    <string name="gd0">GD-DEMO-1</string>
+    <string name="gd1">GD-DEMO-2</string>
+    <string name="gd2">GD-DEMO-3</string>
+
+    <string name="gd_key_0">LPA:1$159.203.14.230:8080$04386-AGYFT-A74Y8-3F815$$</string>
+    <string name="gd_key_1">LPA:1$138.197.131.154:8080$04386-AGYFT-A74Y8-3F815$$</string>
+    <string name="gd_key_2">LPA:1$159.203.47.121:8080$04386-AGYFT-A74Y8-3F815$$</string>
+
+
+    <!-- Fragment0 -->
+    <string name="actions_fragment_0_title_1">GoPHRit</string>
+    <string name="actions_fragment_0_title_2">Check GoPHRit Stats</string>
+    <string name="actions_fragment_0_title_2_tooltip">Refresh Stats</string>
+    <string name="actions_fragment_0_title_3">GoPHRit Account Balance</string>
+    <string name="actions_fragment_0_title_3_tooltip">Where would you like it?</string>
+    <string name="actions_fragment_0_title_4">Please topup your GoPHRit token balance</string>
+
+    <string name="actions_fragment_0_title_4_tooltip">When would you like this done?</string>
+    <string name="actions_fragment_0_title_5">Current Balance : 40 tokens</string>
+    <string name="actions_fragment_0_title_6">Topup Account Balance</string>
+    <string name="actions_fragment_0_title_7">Buy RNDflo Tokens</string>
+
+    <!-- Fragment1 -->
+    <string name="actions_fragment_1_title_0">Create Request</string>
+    <string name="actions_fragment_1_title_1">Who</string>
+    <string name="actions_fragment_1_title_2">What</string>
+    <string name="actions_fragment_1_title_2_tooltip">What would you like?</string>
+    <string name="actions_fragment_1_title_3">Where</string>
+    <string name="actions_fragment_1_title_3_tooltip">Where would you like it?</string>
+    <string name="actions_fragment_1_title_4">When</string>
+    <string name="actions_fragment_1_title_4_tooltip">When would you like this done?</string>
+    <string name="actions_fragment_1_title_5">Attach Image</string>
+    <string name="actions_fragment_1_title_6">Send</string>
+
+    <string name="actions_fragment_1_title_7">Reset</string>
+
+    <!-- Fragment2 -->
+</resources>

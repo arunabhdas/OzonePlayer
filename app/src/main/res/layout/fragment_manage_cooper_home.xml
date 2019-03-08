@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- top_panel start -->
+    <RelativeLayout
+        android:id="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_theme_cello_60percent"
+        >
+
+
+    </RelativeLayout>
+
+    <!-- top_panel end -->
+
+    <!-- center_panel start -->
+    <LinearLayout
+        android:id="@+id/center_panel"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/top_panel"
+        android:layout_marginTop="@dimen/mifi_margin_vertical_signup"
+        android:orientation="vertical"
+        >
+
+
+        <Button
+            android:id="@+id/cooper_manage_discover_profile"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/mifi_margin_top"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:background="@drawable/london_square_corners_button_drawable"
+            android:text="Discover Profile"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/cooper_manage_delete_profile"
+            android:layout_width="match_parent"
+            android:layout_below="@id/manage_esim"
+            android:layout_marginTop="@dimen/mifi_margin_top"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:background="@drawable/london_square_corners_button_drawable"
+            android:text="Delete Profile"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/cooper_manage_get_eid"
+            android:layout_width="match_parent"
+            android:layout_below="@id/manage_esim"
+            android:layout_marginTop="@dimen/mifi_margin_top"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:background="@drawable/london_square_corners_button_drawable"
+            android:text="@string/cooper_fragment_manage_cooper_home_get_id"
+            android:onClick="cooperGetEid"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/cooper_manage_about"
+            android:layout_width="match_parent"
+            android:layout_below="@id/manage_esim"
+            android:layout_marginTop="@dimen/mifi_margin_top"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:background="@drawable/london_square_corners_button_drawable"
+            android:text="About"
+            android:onClick="cooperGoAbout"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+    <!-- center_panel end -->
+
+
+    <!-- bottom_panel start -->
+    <RelativeLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_panel"
+        >
+
+
+    </RelativeLayout>
+    <!-- bottom_panel end -->
+</RelativeLayout>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/title"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:ellipsize="marquee"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:paddingEnd="5dp"
+    android:textAlignment="inherit" />

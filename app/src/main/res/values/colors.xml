@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="colorPrimary" type="color">#673AB7</item>
+    <item name="colorPrimary_50" type="color">#ffFF9800</item>
+    <!--700-->
+    <item name="colorPrimaryDark" type="color">#512DA8</item>
+    <item name="colorPrimaryLight" type="color">#D1C4E9</item>
+    <!--600-->
+    <item name="colorAccent" type="color">#536DFE</item>
+    <!--400-->
+    <item name="button" type="color">#AEDEF4</item>
+    <!--700-->
+    <item name="text_color" type="color">#A5DC86</item>
+
+    <color name="translucent_scrim">#60000000</color>
+    <color name="translucent_scrim_center">#10000000</color>
+    <color name="white">#ffffffff</color>
+
+    <!-- Cooper Colors -->
+    <color name="default_theme_cello">#512DA8</color>
+
+    <!-- CovfefeAlertDialog -->
+    <color name="float_transparent">#00000000</color>
+    <color name="covfefe_dialog_bg_color">#FFFFFF</color>
+    <color name="covfefe_button_text_color">#FFFFFF</color>
+    <color name="covfefe_gray_btn_bg_color">#D0D0D0</color>
+    <color name="covfefe_gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="covfefe_blue_btn_bg_color">#AEDEF4</color>
+    <color name="covfefe_blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="covfefe_red_btn_bg_color">#DD6B55</color>
+    <color name="covfefe_red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="covfefe_error_stroke_color">#F27474</color>
+    <color name="covfefe_success_stroke_color">#A5DC86</color>
+    <color name="covfefe_trans_success_stroke_color">#33A5DC86</color>
+    <color name="covfefe_warning_stroke_color">#F8BB86</color>
+    <color name="covfefe_text_color">#575757</color>
+    <color name="covfefe_material_blue_grey_80">#ff37474f</color>
+    <color name="covfefe_material_blue_grey_90">#ff263238</color>
+    <color name="covfefe_material_blue_grey_95">#ff21272b</color>
+    <color name="covfefe_material_deep_teal_20">#ff80cbc4</color>
+    <color name="covfefe_material_deep_teal_50">#ff009688</color>
+
+    <!-- CovfefeSegmentedTabs -->
+    <color name="covfefe_cerulean">#00ACEC</color>
+    <color name="segment_control_title">#00ACEC</color>
+
+    <!--SwitchCompat -->
+    <color name="switch_inactive_thumb_color">#f1f1f1</color>
+    <color name="switch_inactive_track_color">#42221f1f</color>
+
+    <color name="black_50percent">#80333333</color>
+    <color name="black_80percent">#CC333333</color>
+    <color name="black_20percent">#33000000</color>
+
+    <!--HorizontalProgressBar -->
+    <color name="mifi_bar_start_color">@color/colorAccent</color>
+    <color name="mifi_bar_end_color">@color/colorPrimaryLight</color>
+    <color name="mifi_blue_bb_theme_color">#536DFE</color>
+
+    <color name="default_theme_cello_80percent">#cc673AB7</color>
+    <color name="default_theme_cello_70percent">#B3673AB7</color>
+    <color name="default_theme_cello_60percent">#99673AB7</color>
+    <color name="default_theme_cello_40percent">#66673AB7</color>
+    <color name="default_theme_cello_20percent">#33673AB7</color>
+
+    <!-- MifiUsageFragment -->
+    <color name="mifi_usage_fragment_bg_secondary">#fafafa</color>
+
+    <color name="light_grey">#E8E8E8</color>
+</resources>

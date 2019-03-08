@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:background="@color/covfefe_cerulean"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/mifi_usage_tab_year_title"
+        android:textColor="@color/mifi_bar_start_color"
+        android:textSize="20sp"
+        tools:text="@string/mifi_usage_tab_year_title"
+        />
+</RelativeLayout>

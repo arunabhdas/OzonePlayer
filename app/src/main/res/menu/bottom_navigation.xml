@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_usage"
+        android:icon="@drawable/mifi_usage"
+        android:title="@string/title_mifi_usage"/>
+
+    <item
+        android:id="@+id/navigation_rates"
+        android:icon="@drawable/mifi_rates"
+        android:title="@string/title_mifi_rates"/>
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/mifi_home"
+        android:title="@string/title_mifi_home"/>
+
+    <item
+        android:id="@+id/navigation_packages"
+        android:icon="@drawable/mifi_packages"
+        android:title="@string/title_mifi_packages"/>
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/mifi_more"
+        android:title="@string/title_mifi_more"/>
+
+</menu>
