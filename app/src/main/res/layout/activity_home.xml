@@ -38,11 +38,17 @@
         android:textAllCaps="false" />
 
     <Button
+        android:id="@+id/button_start_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/stopButton"
-        android:id="@+id/button_start_service"
-        android:text="Start Service"/>
+        android:text="@string/start_service"/>
 
+    <Button
+        android:id="@+id/button_oxygen_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stopButton"
+        android:text="@string/oxygen_player"/>
 
 </LinearLayout>
