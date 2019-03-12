@@ -1,4 +1,4 @@
-package com.ozoneplayer.ozoneplayerapp
+package com.ozoneplayer.ozoneplayerapp.activities
 
 import android.app.Activity
 import android.net.Uri
@@ -21,6 +21,7 @@ import com.google.android.exoplayer2.ui.PlayerView
 import com.google.android.exoplayer2.ui.TrackSelectionView
 import com.google.android.exoplayer2.upstream.*
 import com.google.android.exoplayer2.util.Util
+import com.ozoneplayer.ozoneplayerapp.R
 
 class VideoPlayerActivity : Activity(), View.OnClickListener {
 

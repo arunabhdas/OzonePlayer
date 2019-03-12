@@ -10,17 +10,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ozoneplayer.ozoneplayerapp.HomeActivity" android:screenOrientation="portrait">
+        <activity android:name="com.ozoneplayer.ozoneplayerapp.activities.HomeActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ozoneplayer.ozoneplayerapp.RadioPlayerActivity"/>
-        <activity android:name="com.ozoneplayer.ozoneplayerapp.MainActivity"/>
-        <activity android:name="com.ozoneplayer.ozoneplayerapp.CustomPlayerActivity"/>
-        <activity android:name="com.ozoneplayer.ozoneplayerapp.VideoPlayerActivity"
+        <activity android:name="com.ozoneplayer.ozoneplayerapp.activities.RadioPlayerActivity"/>
+        <activity android:name="com.ozoneplayer.ozoneplayerapp.activities.MainActivity"/>
+        <activity android:name="com.ozoneplayer.ozoneplayerapp.activities.CustomPlayerActivity"/>
+        <activity android:name="com.ozoneplayer.ozoneplayerapp.activities.OxygenPlayerActivity"/>
+        <activity android:name="com.ozoneplayer.ozoneplayerapp.activities.VideoPlayerActivity"
             android:launchMode="singleTop"
             android:theme="@style/PlayerTheme">
             <intent-filter>

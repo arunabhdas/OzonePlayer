@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.ozoneplayer.ozoneplayerapp.MainActivity;
+import com.ozoneplayer.ozoneplayerapp.activities.MainActivity;
 import com.ozoneplayer.ozoneplayerapp.R;
 import com.ozoneplayer.ozoneplayerapp.utils.Constants;
 import com.ozoneplayer.ozoneplayerapp.views.HorizontalProgressBarView;

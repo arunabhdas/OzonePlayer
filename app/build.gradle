@@ -43,6 +43,10 @@ dependencies {
     // full exoplayer library
     implementation 'com.google.android.exoplayer:exoplayer:2.8.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
 }
 repositories {
     mavenCentral()

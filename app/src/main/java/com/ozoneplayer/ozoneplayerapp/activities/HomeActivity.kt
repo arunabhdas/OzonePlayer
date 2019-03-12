@@ -1,10 +1,12 @@
-package com.ozoneplayer.ozoneplayerapp
+package com.ozoneplayer.ozoneplayerapp.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import com.google.android.exoplayer2.util.Util
+import com.ozoneplayer.ozoneplayerapp.AudioPlayerService
+import com.ozoneplayer.ozoneplayerapp.R
 
 class HomeActivity : AppCompatActivity() {
 
@@ -13,6 +15,7 @@ class HomeActivity : AppCompatActivity() {
     private val mainTabsButton: Button by lazy { findViewById<Button>(R.id.button_main_tabs) }
     private val customPlayerButton: Button by lazy { findViewById<Button>(R.id.button_custom_player) }
     private val startServiceButton: Button by lazy { findViewById<Button>(R.id.button_start_service) }
+    private val oxygenPlayerButton: Button by lazy { findViewById<Button>(R.id.button_oxygen_player) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +52,10 @@ class HomeActivity : AppCompatActivity() {
             Util.startForegroundService(this, intent);
         }
 
+        oxygenPlayerButton.setOnClickListener {
+            val intent = Intent(this, OxygenPlayerActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }

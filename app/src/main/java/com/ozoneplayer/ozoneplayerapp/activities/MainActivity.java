@@ -1,4 +1,4 @@
-package com.ozoneplayer.ozoneplayerapp;
+package com.ozoneplayer.ozoneplayerapp.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,8 +16,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
-import com.ozoneplayer.ozoneplayerapp.activities.MainDownloadCooperActivity;
-import com.ozoneplayer.ozoneplayerapp.activities.MainManageCooperActivity;
+import com.ozoneplayer.ozoneplayerapp.R;
 import com.ozoneplayer.ozoneplayerapp.fragments.CooperHomeDownloadFragment;
 import com.ozoneplayer.ozoneplayerapp.fragments.CooperHomeFragment;
 import com.ozoneplayer.ozoneplayerapp.fragments.CooperHomeManageFragment;

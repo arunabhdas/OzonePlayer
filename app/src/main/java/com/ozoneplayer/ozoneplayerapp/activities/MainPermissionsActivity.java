@@ -12,7 +12,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.ozoneplayer.ozoneplayerapp.MainActivity;
 import com.ozoneplayer.ozoneplayerapp.R;
 import com.ozoneplayer.ozoneplayerapp.utils.Constants;
 

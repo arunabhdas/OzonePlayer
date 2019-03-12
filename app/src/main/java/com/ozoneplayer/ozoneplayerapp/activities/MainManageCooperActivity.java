@@ -20,7 +20,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
-import com.ozoneplayer.ozoneplayerapp.MainActivity;
 import com.ozoneplayer.ozoneplayerapp.R;
 import com.ozoneplayer.ozoneplayerapp.fragments.CooperHomeDownloadFragment;
 import com.ozoneplayer.ozoneplayerapp.fragments.CooperHomeManageFragment;

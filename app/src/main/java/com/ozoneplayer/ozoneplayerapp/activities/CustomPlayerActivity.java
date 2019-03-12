@@ -1,4 +1,4 @@
-package com.ozoneplayer.ozoneplayerapp;
+package com.ozoneplayer.ozoneplayerapp.activities;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -11,6 +11,7 @@ import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
+import com.ozoneplayer.ozoneplayerapp.R;
 
 public class CustomPlayerActivity extends Activity {
     private PlayerView playerView;
