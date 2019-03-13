@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context="com.ozoneplayerapp.exoplayersample.com.ozoneplayerapp.ozoneplayerapp.HomeActivity">
+    tools:context=".activities.OxygenPlayerActivity">
 
     <Button
         android:id="@+id/button_radio_player"
