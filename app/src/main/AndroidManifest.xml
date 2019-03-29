@@ -21,6 +21,9 @@
         <activity android:name="com.ozoneplayer.ozoneplayerapp.activities.MainActivity"/>
         <activity android:name="com.ozoneplayer.ozoneplayerapp.activities.CustomPlayerActivity"/>
         <activity android:name="com.ozoneplayer.ozoneplayerapp.activities.OxygenPlayerActivity"/>
+        <activity android:name="com.ozoneplayer.ozoneplayerapp.activities.UsersActivity"
+            android:label="@string/users_activity"
+            android:screenOrientation="portrait" />
         <activity android:name="com.ozoneplayer.ozoneplayerapp.activities.VideoPlayerActivity"
             android:launchMode="singleTop"
             android:theme="@style/PlayerTheme">
