@@ -49,7 +49,8 @@ class HomeActivity : AppCompatActivity() {
 
         startServiceButton.setOnClickListener {
             val intent = Intent(this, AudioPlayerService::class.java)
-            Util.startForegroundService(this, intent);
+            // Util.startForegroundService(this, intent);
+            startService(intent);
         }
 
         oxygenPlayerButton.setOnClickListener {

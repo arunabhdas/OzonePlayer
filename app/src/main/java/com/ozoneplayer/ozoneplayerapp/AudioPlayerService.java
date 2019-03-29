@@ -43,6 +43,9 @@ public class AudioPlayerService extends Service {
 
     }
 
+    private void startForeground() {
+    }
+
     @Override
     public void onDestroy() {
         player.release();
