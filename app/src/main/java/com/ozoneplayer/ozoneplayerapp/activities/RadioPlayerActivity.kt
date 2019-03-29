@@ -2,10 +2,13 @@ package com.ozoneplayer.ozoneplayerapp.activities;
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.net.Uri
 import android.widget.Button
 import com.google.android.exoplayer2.SimpleExoPlayer
 import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory
 import com.google.android.exoplayer2.extractor.ExtractorsFactory
+import com.google.android.exoplayer2.source.ExtractorMediaSource
+import com.google.android.exoplayer2.ExoPlayerFactory
 import com.google.android.exoplayer2.source.MediaSource
 import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector
@@ -46,7 +49,6 @@ class RadioPlayerActivity : AppCompatActivity() {
                 Util.getUserAgent(this, "mediaPlayerSample"), defaultBandwidthMeter)
 
 
-        /*
         mediaSource = ExtractorMediaSource(Uri.parse("http://uk7.internet-radio.com:8226"),
                 dataSourceFactory,
                 extractorsFactory,
@@ -59,7 +61,6 @@ class RadioPlayerActivity : AppCompatActivity() {
             startButton.setOnClickListener { playWhenReady = true }
             stopButton.setOnClickListener { playWhenReady = false }
         }
-        */
 
     }
 
