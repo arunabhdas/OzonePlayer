@@ -51,4 +51,11 @@
         android:layout_below="@+id/stopButton"
         android:text="@string/oxygen_player"/>
 
+    <Button
+        android:id="@+id/button_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/users_activity"
+        android:textAllCaps="false" />
+
 </LinearLayout>

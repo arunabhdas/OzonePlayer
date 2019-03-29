@@ -61,4 +61,21 @@
     <dimen name="large_text_size">16dp</dimen>
     <dimen name="larger_text_size">18dp</dimen>
     <dimen name="huge_text_size">20dp</dimen>
+
+    <dimen name="margin_text_horizontal">16dp</dimen>
+    <dimen name="margin_row_vertical">64dp</dimen>
+    <dimen name="listview_divider_height">1dp</dimen>
+    <dimen name="button_cta_height">40dp</dimen>
+    <dimen name="button_cta_width">120dp</dimen>
+    <dimen name="ozone_settings_margin_top">10dp</dimen>
+    <dimen name="setting_horizontal_divider_margin">5dp</dimen>
+    <dimen name="listview_cta_height">56dp</dimen>
+    <dimen name="setting_horizontal_margin">10dp</dimen>
+    <item name="ozone_alpha_fifty_percent" format="float" type="dimen">0.5</item>
+    <dimen name="listview_header_height">20dp</dimen>
+    <dimen name="list_header_size">10dp</dimen>
+    <dimen name="arrow_cta_height">15dp</dimen>
+    <dimen name="margin_indent_1">40dp</dimen>
+    <dimen name="margin_row_right">10dp</dimen>
+    <dimen name="button_corner_radius">5dp</dimen>
 </resources>

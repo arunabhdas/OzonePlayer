@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/setting_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_centerInParent="true"
+    >
+
+    <TextView
+        android:id="@+id/fieldName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="itemTitle"
+        tools:visibility="visible"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/default_text_size" />
+
+
+    <EditText
+        android:id="@+id/fieldValue"
+        tools:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="fieldValue"
+        android:gravity="center_vertical"
+        android:layout_below="@id/fieldName"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/margin_row_vertical"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/default_text_size" />
+
+
+    <Button
+        android:id="@+id/dynamic_config_save_button"
+        android:layout_width="@dimen/button_cta_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/default_button"
+        android:gravity="center"
+        android:text="@string/user_config_button_save"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -16,6 +16,8 @@ class HomeActivity : AppCompatActivity() {
     private val customPlayerButton: Button by lazy { findViewById<Button>(R.id.button_custom_player) }
     private val startServiceButton: Button by lazy { findViewById<Button>(R.id.button_start_service) }
     private val oxygenPlayerButton: Button by lazy { findViewById<Button>(R.id.button_oxygen_player) }
+    private val usersButton: Button by lazy { findViewById<Button>(R.id.button_users) }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,6 +57,12 @@ class HomeActivity : AppCompatActivity() {
 
         oxygenPlayerButton.setOnClickListener {
             val intent = Intent(this, OxygenPlayerActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        usersButton.setOnClickListener {
+            val intent = Intent(this, UsersActivity::class.java)
             startActivity(intent)
         }
     }

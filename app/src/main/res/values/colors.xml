@@ -67,4 +67,11 @@
     <color name="mifi_usage_fragment_bg_secondary">#fafafa</color>
 
     <color name="light_grey">#E8E8E8</color>
+
+    <color name="dark_grey">#a3a3a3</color>
+    <color name="colorListDivider">@color/dark_grey</color>
+    <color name="black">#333333</color>
+    <color name="trans">#00000000</color>
+    <color name="listview_section_color">#1d4961</color>
+    <color name="listview_title_background">@color/colorPrimaryDark</color>
 </resources>

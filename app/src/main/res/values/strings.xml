@@ -15,8 +15,16 @@
     <string name="start_service">Start Service</string>
     <string name="oxygen_player">Oxygen Player</string>
     <string name="users_activity">Users Activity</string>
-
-
+    <string name="menu_user_settings">User Settings</string>
+    <string name="user_button_cancelled">Exiting</string>
+    <string name="unexpected_error">Unexpected Error Occurred</string>
+    <string name="user_settings_1">User Settings 1</string>
+    <string name="user_settings_2">User Settings 2</string>
+    <string name="user_settings_3">User Settings 3</string>
+    <string name="user_config_button_apply">Apply</string>
+    <string name="user_config_saved">Saved</string>
+    <string name="notice_loading">Loading</string>
+    <string name="user_config_button_save">Save</string>
 
     <!-- Generic Strings -->
     <string name="on">ON</string>
